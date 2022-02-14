@@ -1,0 +1,1 @@
+# essential-quarkus-scaffold
