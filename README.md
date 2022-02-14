@@ -14,7 +14,7 @@ It is recommended to have, at least **Java 11**, [GraalVM](https://www.graalvm.o
 - [Running functional tests](#running-functional-tests)
 - [Debugging](#debugging)
 - [Commit messages convention](#commit-messages-convention)
-- [## Building and deploying](#building-and-deploying)
+- [Building and deploying](#building-and-deploying)
 - [Reference documentation](#reference-documentation)
 
 ## Project structure
@@ -101,7 +101,7 @@ It includes [Prettier](https://prettier.io/), [Checkstyle](https://checkstyle.so
 - **PMD** finds common programming flaws like unused variables, empty catch blocks, unnecessary object creation, and so forth.
 - **SpotBugs** is used to perform static analysis on Java code. It looks for instances of "bug patterns".
 
-Use `./gradlew lint` to analyze your code. Many problems can be automatically fixed with `./gradlew format` task.
+Use `./gradlew lint` to analyze your code. Many problems can be automatically fixed with `./gradlew format` command.
 Depending on our editor, you may want to add an editor extension to lint and format your code while you type or on-save.
 
 ## Running unit tests
@@ -199,7 +199,7 @@ If you want to learn more about building native executables, please consult <htt
 This project contains a Dockerfile that you can use to build your Docker image. Use `./gradlew buildImage` after `build` command.
 Native images provide key advantages, such as instant startup, instant peak performance, and reduced memory consumption.
 
-Also, you can deploy this project to Docker Swarm using `./gradlew deploy` task.
+Also, you can deploy this project to Docker Swarm using `./gradlew deploy` command.
 
 ## Reference documentation
 
