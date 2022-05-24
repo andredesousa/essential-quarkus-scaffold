@@ -33,6 +33,7 @@ Based on best practices from the community, Quarkus, other github projects and d
 |  |  ├── docker
 |  |  ├── java
 |  |  |  └── app
+|  |  |    ├── Application.java
 |  |  |    ├── AppController.java
 |  |  |    └── AppService.java
 |  |  └── resources

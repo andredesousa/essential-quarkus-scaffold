@@ -10,7 +10,7 @@ import javax.ws.rs.core.MediaType;
 public class AppController {
 
     @Inject
-    private transient AppService service;
+    transient AppService service;
 
     @GET
     @Produces(MediaType.TEXT_PLAIN)
