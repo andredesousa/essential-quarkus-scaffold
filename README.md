@@ -1,6 +1,7 @@
 # Essential Quarkus Scaffold
 
 This project uses [Quarkus](https://quarkus.io/), the Supersonic Subatomic Java Framework.
+It was generated with [code.quarkus.io](https://code.quarkus.io/).
 It provides a complete **RESTful API** configured, including build, test, and deploy scripts as examples.
 It is recommended to have, at least **Java 11**, [GraalVM](https://www.graalvm.org/), [Node.js](https://nodejs.org/en/), [Docker](https://www.docker.com/) and [Ansible](https://www.ansible.com/) installed.
 
@@ -37,9 +38,10 @@ Based on best practices from the community, Quarkus, other github projects and d
 |  |  |    ├── AppController.java
 |  |  |    └── AppService.java
 |  |  └── resources
-|  |    ├── application-prod.properties
-|  |    └── application.properties
+|  |     ├── application-prod.properties
+|  |     └── application.properties
 |  └── test
+├── .dockerignore
 ├── .editorconfig
 ├── .gitignore
 ├── .prettierrc

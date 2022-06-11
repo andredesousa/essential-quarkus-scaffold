@@ -3,11 +3,11 @@ plugins {
     id 'com.github.ben-manes.versions' version '0.42.0'
     id 'com.github.spotbugs' version '5.0.5'
     id 'com.star-zero.gradle.githook' version '1.2.1'
+    id 'io.quarkus' version '2.7.1.Final'
     id 'pl.allegro.tech.build.axion-release' version '1.13.6'
     id 'ru.netris.commitlint' version '1.4.1'
     id 'se.bjurr.gitchangelog.git-changelog-gradle-plugin' version '1.71.8'
     id 'checkstyle'
-    id 'io.quarkus'
     id 'jacoco'
     id 'java'
     id 'pmd'
@@ -18,7 +18,6 @@ version '1.0.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
-    mavenLocal()
 }
 
 sourceSets {
@@ -29,7 +28,7 @@ sourceSets {
 }
 
 dependencies {
-    implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
+    implementation enforcedPlatform('io.quarkus.platform:quarkus-bom:2.7.1.Final')
     implementation 'io.quarkus:quarkus-resteasy-jackson'
     implementation 'io.quarkus:quarkus-arc'
     implementation 'io.quarkus:quarkus-resteasy'
