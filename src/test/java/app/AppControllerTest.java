@@ -3,20 +3,21 @@ package app;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
 
-import io.quarkus.test.junit.QuarkusTest;
-import io.quarkus.test.junit.mockito.InjectMock;
-import javax.inject.Inject;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
 
-@QuarkusTest
 @DisplayName("AppController")
+@ExtendWith(MockitoExtension.class)
 public class AppControllerTest {
 
-    @InjectMock
+    @Mock
     transient AppService appService;
 
-    @Inject
+    @InjectMocks
     transient AppController appController;
 
     @Test

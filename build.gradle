@@ -4,9 +4,9 @@ plugins {
     id 'com.github.spotbugs' version '5.0.5'
     id 'com.star-zero.gradle.githook' version '1.2.1'
     id 'io.quarkus' version '2.7.1.Final'
-    id 'pl.allegro.tech.build.axion-release' version '1.13.6'
+    id 'pl.allegro.tech.build.axion-release' version '1.14.1'
     id 'ru.netris.commitlint' version '1.4.1'
-    id 'se.bjurr.gitchangelog.git-changelog-gradle-plugin' version '1.71.8'
+    id 'se.bjurr.gitchangelog.git-changelog-gradle-plugin' version '1.73.0'
     id 'checkstyle'
     id 'jacoco'
     id 'java'
@@ -14,7 +14,7 @@ plugins {
 }
 
 group = 'app'
-version '1.0.0-SNAPSHOT'
+version = scmVersion.version
 
 repositories {
     mavenCentral()
@@ -36,6 +36,7 @@ dependencies {
     testImplementation 'io.quarkus:quarkus-junit5'
     testImplementation 'io.quarkus:quarkus-junit5-mockito'
     testImplementation 'io.rest-assured:rest-assured'
+    testImplementation 'org.mockito:mockito-junit-jupiter:4.8.0'
 }
 
 java {

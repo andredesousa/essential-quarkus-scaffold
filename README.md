@@ -87,7 +87,7 @@ For more details, read the [Command-Line Interface](https://docs.gradle.org/curr
 
 ## Running in development mode
 
-You can run your application in dev mode that enables live coding using `./gradlew bootRun` command.
+You can run your application in dev mode that enables live coding using `./gradlew quarkusDev` command.
 Quarkus ships with a Dev UI, which is available in dev mode only at <http://localhost:8080/q/dev/>.
 
 This app includes [Swagger](https://swagger.io/). It is available at <http://localhost:8080/q/swagger-ui/>.

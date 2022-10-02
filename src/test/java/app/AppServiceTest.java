@@ -2,16 +2,17 @@ package app;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import io.quarkus.test.junit.QuarkusTest;
-import javax.inject.Inject;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.junit.jupiter.MockitoExtension;
 
-@QuarkusTest
 @DisplayName("AppService")
+@ExtendWith(MockitoExtension.class)
 public class AppServiceTest {
 
-    @Inject
+    @InjectMocks
     transient AppService service;
 
     @Test
